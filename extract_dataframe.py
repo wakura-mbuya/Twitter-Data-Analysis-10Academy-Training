@@ -23,7 +23,7 @@ def read_json(json_file: str)->list:
 
 class TweetDfExtractor:
     """
-    this function will parse tweets json into a pandas dataframe
+    this function will parse tweets json into a pandas dataframe 
     
     Return
     ------
@@ -129,11 +129,11 @@ class TweetDfExtractor:
         retweet_count = self.find_retweet_count()
         screen_name = self.find_screen_name()
         follower_count = self.find_followers_count()
-        friends_count = self.find_friends_count()
-        sensitivity = self.is_sensitive()
+        friends_count = self.find_friends_count()  
         hashtags = self.find_hashtags()
         mentions = self.find_mentions()
         location = self.find_location()
+        sensitivity= self.is_sensitive()
         data = zip(created_at, source, text, polarity, subjectivity, lang, fav_count, retweet_count, screen_name, follower_count, friends_count, sensitivity, hashtags, mentions, location)
         df = pd.DataFrame(data=data, columns=columns)
 
