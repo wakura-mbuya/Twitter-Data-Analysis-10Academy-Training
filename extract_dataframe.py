@@ -107,7 +107,7 @@ class TweetDfExtractor:
             try:
                  location = self.tweets_list['user']['location']            
             except TypeError:
-                location = 'None' 
+                location = None
             location_list.append(location)
         return location_list
 
