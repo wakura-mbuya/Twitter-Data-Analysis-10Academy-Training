@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install boto3
-      - name: Remove zip files
+      - name: Extract the dataset from the zip file
         run: unzip -qq './data/*.zip' -d ./data && rm ./data/*.zip
       - name: Test with unittest
         run: |
