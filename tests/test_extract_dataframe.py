@@ -89,7 +89,7 @@ class TestTweetDfExtractor(unittest.TestCase):
     #     self.assertEqual(self.df.find_mentions(), )
 
     def test_find_location(self):
-        self.assertEqual(self.df.find_location(), ['None', 'None', 'None', 'None', 'None'])
+        self.assertEqual(self.df.find_location(), [None, None, None, None, None])
 
 if __name__ == '__main__':
 	unittest.main()
