@@ -1,3 +1,5 @@
+[![ci-python-unittest](https://github.com/wakura-mbuya/Twitter-Data-Analysis-10Academy-Training/actions/workflows/main.yml/badge.svg)](https://github.com/wakura-mbuya/Twitter-Data-Analysis-10Academy-Training/actions/workflows/main.yml)
+
 # Twitter-Data-Analysis
 
 ### So here are the bare minimum requirement for completing this task
